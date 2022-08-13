@@ -2,13 +2,13 @@
 
 User Interface of the Chatbot - http://baltias1.s3-website-us-east-1.amazonaws.com
 
-This is a Amazon Web Service-based chatbot that recommends restaurants to users on the basis of entered requirements such as - Number of people, Cuisine, Time of the day, etc provided via interactive conversations. Several microservices were used in synergy to create this serverless, microservice-driven web application prototype.<br/>
+This is a Amazon Web Service-based chatbot that recommends restaurants to users on the basis of entered requirements such as - Number of people, Cuisine, Time of the day, etc provided via interactive conversations. Several microservices were used in synergy to create the serverless, microservice-driven web application prototype.<br/>
 
-We gather all of our code here. Note that the code here cannot be run directly because we use AWS to delopy this application. Almost half of the work is to create and configure AWS components. The used AWSs are listed as followings:<br/>
+We gather all of our code here. Note that the code here cannot be run directly because we are using AWS to delopy this application. Almost half of the work is to create and configure AWS components. The used AWSs are listed as following:<br/>
 
 **AWS S3**
 
-● It stores all frontend files in a bucket. All HTML,CSS and Js files are stored in the created S3 bucket.<br/>
+● It stores the frontend files in a bucket. All the HTML,CSS and Js files are stored in the created S3 bucket.<br/>
 
 *Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.*<br/>
 
@@ -19,7 +19,7 @@ We gather all of our code here. Note that the code here cannot be run directly b
 
 **AWS Lambda function**
 
-● Lamda functions handle request from front-end.<br/>
+● Lamda functions handle request from the front-end.<br/>
 ● In our project we have total 3 lambda functions. <br/>
 1) LF0 is connected with API gateway and lambda - Receives requests from API gateway and sends to Lex.<br/>
 2) LF1  helps Lex in returning the response, handling the cases and connecting the obtained values.<br/>
